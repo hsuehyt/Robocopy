@@ -32,7 +32,7 @@ def start_robocopy():
         return
     
     robocopy_command = [
-        "robocopy", source, destination, "/E", "/XC", "/XN", "/XO", "/XD", 
+        "robocopy", source, destination, "/E", "/XN", "/XD", 
         "$RECYCLE.BIN", "System Volume Information", "Config.Msi", "pagefile.sys", 
         "hiberfil.sys", "swapfile.sys", "Recovery", "Windows", "ProgramData"
     ]
