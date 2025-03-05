@@ -45,7 +45,7 @@ def start_robocopy():
 
 # Create GUI window
 root = tk.Tk()
-root.title("Robocopy GUI")
+root.title("Robocopy")
 root.geometry("320x240")
 
 # Variables
