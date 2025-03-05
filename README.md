@@ -36,7 +36,7 @@ pip install tk
 ## Robocopy Parameters Used  
 The script executes **Robocopy** with the following options:  
 - `/E` - Copy all subdirectories, including empty ones  
-- `/XC`, `/XN`, `/XO` - Exclude changed, newer, and older files  
+- `/XN` - Exclude newer files in the destination (won’t overwrite them)  
 - `/XD` - Exclude system directories (`$RECYCLE.BIN`, `System Volume Information`, etc.)  
 
 ## License  
