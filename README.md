@@ -1,6 +1,9 @@
-# Robocopy GUI  
+# Robocopy
 
 A simple Python-based GUI for **Robocopy**, allowing users to easily select source and destination folders, view drive information, and execute file copying operations with predefined parameters.  
+
+## Screenshot  
+![Robocopy GUI](https://github.com/hsuehyt/Robocopy/blob/main/images/screenshot.png)  
 
 ## Features  
 - **Easy-to-use GUI** powered by **Tkinter**  
