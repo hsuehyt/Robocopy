@@ -26,17 +26,17 @@ def select_destination():
 def start_robocopy():
     source = source_var.get()
     destination = destination_var.get()
-    
+
     if not source or not destination:
         messagebox.showerror("Error", "Please select both source and destination folders.")
         return
-    
+
     robocopy_command = [
         "robocopy", source, destination, "/E", "/XN", "/XD", 
         "$RECYCLE.BIN", "System Volume Information", "Config.Msi", "pagefile.sys", 
-        "hiberfil.sys", "swapfile.sys", "Recovery", "Windows", "ProgramData"
+        "hiberfil.sys", "swapfile.sys", "Recovery", "Windows", "ProgramData", "found.000"
     ]
-    
+
     try:
         subprocess.run(robocopy_command, shell=True)
         messagebox.showinfo("Success", "Robocopy operation completed successfully.")
